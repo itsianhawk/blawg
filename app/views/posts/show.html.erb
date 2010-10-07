@@ -1,0 +1,33 @@
+<div class="blog_post">
+<h1 class="blog_title">
+  <%=h @post.title %>
+</h1>
+
+
+<p class="blog_body">
+  <%=h @post.body %>
+</p>
+
+  <%= link_to 'Back', posts_path %>
+
+    <% if !current_user.nil? %>
+      | <%= link_to 'Edit', edit_post_path(@post) %> 
+    <% end %>
+    
+<hr>
+<h2 class="blog_comments">Comments</h2>
+  
+    <% @post.comments.each do |comment| %>
+    <div>
+     <p class="blog_body"> <%= comment.body %></p>
+      
+    </div><br>
+    <div><p class="small"><em>Posted by <b>
+      <%= comment.user %></b> on <%= comment.created_at(:date_time) %></div><br><hr>
+    </em></p>
+  <% end %>
+<br>
+
+    <%= link_to "New Comment", new_comment_path(:post_id => @post.id) %>
+    
+</div>

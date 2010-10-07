@@ -1,0 +1,23 @@
+<% @comments.each do |comment| %>
+
+	<div class="blog_post">  
+		<h3><%=h comment.user %></h3>
+	   <%=h truncate(comment.body, :length => 400) %>
+	   <p class="post_time">Posted at: <%=h comment.created_at %></p>
+	   
+	   <p>
+	   	 <% if !current_user.nil? %>
+	   	   <%= link_to 'Edit', edit_comment_path(comment) %> |
+	   	   <%= link_to 'Delete', comment, :confirm => 'Are you sure?', :method => :delete %>
+	     <% end %>
+   	 </p>
+	</div>
+	
+<% end %>
+
+
+<br />
+
+<% if !current_user.nil? %>
+  <%= link_to 'New comment', new_comment_path %>
+<% end %>

@@ -1,0 +1,110 @@
+body { background-color: #2F3857; color: #eee; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+.small {
+  font-size: 10px;
+}
+
+pre {
+  background-color: #68756A;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #FFFF00; }
+a:visited { color: #E8D30C; }
+a:hover { color: #ffff00; font-weight: bold; }
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+div.comment_post {
+	border: 1px solid #aaa;
+	background: #eee;
+	margin: 10px 0;
+	padding: 5px;
+}
+.comment_post .post_time {
+  font-weight: bold;
+}
+
+div.blog_post {
+	border: 1px solid #aaa;
+	background: #3B4D96;
+	margin: 10px 0;
+	padding: 5px;
+}
+
+div.new_comment {
+	border: 1px solid #aaa;
+	background: #3B4D96;
+	margin: 10px 0;
+	padding: 5px;
+}
+
+.blog_comments {
+  color: #FFC90E;
+  font-weight: bold;
+  margin: 20px 0;
+  padding: 5px;
+}
+
+.blog_title {
+  color: #FF7C00;
+  margin: 5px;
+  padding: 0px 0px 5px 0px;
+}
+
+.blog_body {
+  margin: 5px;
+}
+}
+
+.blog_post .post_time {
+  font-weight: bold;
+}
+
+#login {
+  position: absolute; 
+  right: 10px; 
+  top: 10px;
+}
+
