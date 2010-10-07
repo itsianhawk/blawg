@@ -34,14 +34,7 @@ Rails::Initializer.run do |config|
 
   # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
   # Run "rake -D time" for a list of tasks for finding time zone names.
-Time::DATE_FORMATS[:short_date] = "%m/%d/%Y"
-Date::DATE_FORMATS[:short_date] = "%m/%d/%Y"
-Time::DATE_FORMATS[:date_time] = "%m/%d/%Y %I :%M %p"
-Time::DATE_FORMATS[:no_year] = "%B %d"
-Date::DATE_FORMATS[:no_year] = "%B %d"
- ActiveSupport::CoreExtensions::Time::Conversions::DATE_FORMATS.merge!(
- :default => '%m/%d/%Y %I:%M %p'
-)  
+
 # ActiveSupport::CoreExtensions::Time::Conversions::DATE_FORMATS.merge!(
 # :default => '%m/%d/%Y'
 #)
@@ -51,3 +44,12 @@ Date::DATE_FORMATS[:no_year] = "%B %d"
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
 end
+
+Time::DATE_FORMATS[:short_date] = "%m/%d/%Y"
+Date::DATE_FORMATS[:short_date] = "%m/%d/%Y"
+Time::DATE_FORMATS[:date_time] = "%m/%d/%Y %I :%M %p"
+Time::DATE_FORMATS[:no_year] = "%B %d"
+Date::DATE_FORMATS[:no_year] = "%B %d"
+ ActiveSupport::CoreExtensions::Time::Conversions::DATE_FORMATS.merge!(
+ :default => '%m/%d/%Y %I:%M %p'
+)
