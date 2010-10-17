@@ -20,7 +20,7 @@
   </div>
 <% end %>
 
-<a href="http://localhost:3000"><%= image_tag "/blawg.png" %></a>
+<%= link_to image_tag "/blawg.png", root_url %>
 
 <% if flash %>
 <div style="color: green"><%= flash[:notice] %></div>
