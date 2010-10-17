@@ -10,6 +10,9 @@
     <%= f.text_area :body %>
   </p>
   <p>
+	<%= f.label :captcha, "What is the opposite of white?" %><br />
+	<%= f.text_field :captcha %>
+  <p>
     <%= f.submit 'Create' %>
   </p>
 <% end %>

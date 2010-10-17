@@ -22,8 +22,12 @@
      <p class="blog_body"> <%= comment.body %></p>
       
     </div><br>
-    <div><p class="small"><em>Posted by <b>
-      <%= comment.user %></b> on <%= comment.created_at(:date_time) %></div><br><hr>
+    <div><p class="small"><em>
+		Posted 
+		<% if comment.user %>
+			by <b><%= comment.user %></b>
+		<% end %>
+		on <%= comment.created_at(:date_time) %></div><br><hr>
     </em></p>
   <% end %>
 <br>
