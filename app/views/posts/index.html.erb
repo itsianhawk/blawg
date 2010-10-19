@@ -22,5 +22,6 @@
 <br />
 
 <% if !current_user.nil? %>
-  <%= link_to 'New post', new_post_path %>
+  <%= link_to 'New post', new_post_path %> | 
+  <%= link_to "Users", users_url %>
 <% end %>
