@@ -1,15 +1,16 @@
 body, p, ol, ul, td {
   font-family: Helvetica, Arial, Sans-serif;
   font-size:   18px;
-  line-height: 20px;
+  line-height: 1.2em;
 }
 h1, h2, h3, h4 {
   font-size: 2.5em;
   font-family: Helvetica, Arial, Sans-Serif;
+  line-height: .95em;
 }
 
 .small {
-  font-size: .8em;
+  font-size: .9em;
 }
 
 pre {
@@ -80,7 +81,7 @@ div#logo {
 }
 
 h2.comments_title {
-  margin-top: 1.2em;
+  margin-top: 1em;
 }
 div.comment_post {
 	border: 1px solid #aaa;
@@ -132,3 +133,6 @@ div.post h2 {
   top: 10px;
 }
 
+div.links {
+  padding: 0 .5em;
+}
