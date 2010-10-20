@@ -1,8 +1,14 @@
-<div class="blog_post">
-<h1 class="blog_title">
-  <%=h @post.title %>
-</h1>
+<div class="post">
+  <h2>
+    <%=h @post.title %>
+  </h2>
+  <div class="post_body">
+    <%=h @post.body %>
+  </div>
+  <p class="post_time">Posted at: <%=h @post.created_at %></p>
+</div>
 
+<%= link_to 'Back', posts_path, :style => "margin: .4em 0 0 0.2em" %>
 
 <p class="blog_body">
   <%= auto_link(@post.body, :link => :urls) %>
@@ -13,25 +19,30 @@
     <% if !current_user.nil? %>
       | <%= link_to 'Edit', edit_post_path(@post) %> 
     <% end %>
+=======
+<% if !current_user.nil? %>
+  | <%= link_to 'Edit', edit_post_path(@post) %> 
+<% end %>
     
-<hr>
-<h2 class="blog_comments">Comments</h2>
+<h2 class="comments_title">Comments</h2>
   
-    <% @post.comments.each do |comment| %>
-    <div>
-     <p class="blog_body"> <%= comment.body %></p>
-      
-    </div><br>
-    <div><p class="small"><em>
-		Posted 
-		<% if comment.user %>
-			by <b><%= comment.user %></b>
-		<% end %>
-		on <%= comment.created_at(:date_time) %></div><br><hr>
-    </em></p>
-  <% end %>
-<br>
+<% @post.comments.each do |comment| %>
+  <div style="margin: 2em 0 2em">
+    <p class="">
+      <%= comment.body %>
+    </p>  
+  </div>
+  <p class="small" style="margin-bottom: 3em">
+    <em>Posted 
+    <% if comment.user %>
+		  by <b><%= comment.user %></b>
+	  <% end %>
+	  on <%= comment.created_at(:date_time) %></em>
+  </p>
+  
+  <hr>
+<% end %>
 
-    <%= link_to "New Comment", new_comment_path(:post_id => @post.id) %>
-    
-</div>
+<p style="margin-top: 2em">
+  <%= link_to "New Comment", new_comment_path(:post_id => @post.id) %>
+</p>
