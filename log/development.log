@@ -15713,3 +15713,27 @@ Processing CommentsController#new (for 127.0.0.1 at 2010-10-20 18:51:31) [GET]
 Rendering template within layouts/comments
 Rendering comments/new
 Completed in 21ms (View: 10, DB: 0) | 200 OK [http://localhost/comments/new?post_id=1]
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2010-10-20 18:52:17) [GET]
+  Parameters: {"action"=>"new", "post_id"=>"1", "controller"=>"comments"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/comments
+Rendering comments/new
+Completed in 45ms (View: 28, DB: 0) | 200 OK [http://localhost/comments/new?post_id=1]
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2010-10-20 18:52:18) [GET]
+  Parameters: {"action"=>"new", "post_id"=>"1", "controller"=>"comments"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/comments
+Rendering comments/new
+Completed in 80ms (View: 9, DB: 0) | 200 OK [http://localhost/comments/new?post_id=1]
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2010-10-20 18:52:19) [GET]
+  Parameters: {"action"=>"new", "post_id"=>"1", "controller"=>"comments"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/comments
+Rendering comments/new
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://localhost/comments/new?post_id=1]
