@@ -1,13 +1,15 @@
-body { background-color: #2F3857; color: #eee; }
-
 body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size:   13px;
-  line-height: 18px;
+  font-family: Helvetica, Arial, Sans-serif;
+  font-size:   18px;
+  line-height: 20px;
+}
+h1, h2, h3, h4 {
+  font-size: 2.5em;
+  font-family: Helvetica, Arial, Sans-Serif;
 }
 
 .small {
-  font-size: 10px;
+  font-size: .8em;
 }
 
 pre {
@@ -16,9 +18,26 @@ pre {
   font-size: 11px;
 }
 
-a { color: #FFFF00; }
-a:visited { color: #E8D30C; }
-a:hover { color: #ffff00; font-weight: bold; }
+a { color: #222; }
+a:visited { color: #444; }
+a:hover { color: red; }
+
+div#logo {
+  margin: 40px 0 20px 0;
+}
+#logo a {
+  font-size: 4em;
+  font-weight: bold;
+  letter-spacing: -2px;
+  text-decoration: none;
+  color: #000;
+}
+
+#container {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
 
 .fieldWithErrors {
   padding: 2px;
@@ -60,6 +79,9 @@ a:hover { color: #ffff00; font-weight: bold; }
   color: black;
 }
 
+h2.comments_title {
+  margin-top: 1.2em;
+}
 div.comment_post {
 	border: 1px solid #aaa;
 	background: #eee;
@@ -70,45 +92,43 @@ div.comment_post {
   font-weight: bold;
 }
 
-div.blog_post {
+div.post {
 	border: 1px solid #aaa;
-	background: #3B4D96;
 	margin: 10px 0;
-	padding: 5px;
+	padding: 8px 15px;
+  background: #eee;
 }
 
 div.new_comment {
 	border: 1px solid #aaa;
-	background: #3B4D96;
 	margin: 10px 0;
 	padding: 5px;
 }
 
-.blog_comments {
-  color: #FFC90E;
+.post_comments {
   font-weight: bold;
   margin: 20px 0;
   padding: 5px;
 }
 
-.blog_title {
-  color: #FF7C00;
-  margin: 5px;
+div.post h2 {
+  margin: 10px 0;
   padding: 0px 0px 5px 0px;
 }
 
-.blog_body {
-  margin: 5px;
-}
+.post_body {
+  margin: 1.3em 0 1.3em;
+  font-family:  Georgia, Times New Roman, Serif;
+  font-size: 1.2em;
 }
 
-.blog_post .post_time {
+.post_post .post_time {
   font-weight: bold;
 }
 
 #login {
   position: absolute; 
-  right: 10px; 
+  right: 5px; 
   top: 10px;
 }
 
