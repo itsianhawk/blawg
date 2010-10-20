@@ -11,7 +11,7 @@
   
 <% if current_user %>
   <div id="login">
-   <%= current_user %> is blawgin. <%= link_to "Users", users_url %>
+   <%= current_user %> is blawgin.
    <%= link_to "Logout", logout_url %>
   </div>
 <% else %>
@@ -21,7 +21,7 @@
   </div>
 <% end %>
 
-<%= link_to image_tag ("/blawg.png"), root_url %>
+<%= link_to image_tag("/blawg.png"), root_url %>
 
 <% if flash %>
 <div style="color: green"><%= flash[:notice] %></div>

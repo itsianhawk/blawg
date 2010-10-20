@@ -5,7 +5,7 @@
 
 
 <p class="blog_body">
-  <%=h @post.body %>
+  <%= auto_link(@post.body, :link => :urls) %>
 </p>
 
   <%= link_to 'Back', posts_path %>
