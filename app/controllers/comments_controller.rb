@@ -25,6 +25,7 @@ class CommentsController < ApplicationController
   # GET /comments/new.xml
   def new
     @comment = Comment.new
+    @post = Post.find(params[:post_id])
 
     respond_to do |format|
       format.html # new.html.erb

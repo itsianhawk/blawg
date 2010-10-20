@@ -1,17 +1,11 @@
 <% @posts.each do |post| %>
-<% comments = '/comments' %>
-
-
-	<div class="blog_post">  
-		<h2 class="blog_title"><%=h post.title %></h2>
-	   <p class="blog_body"><%= auto_link(truncate(post.body, :length => 400), :link => :urls) %></p>
-=======
+	
 	<div class="post">  
-		<h2><%=h post.title %></h2>
-	   <div class="post_body"><%=h truncate(post.body, :length => 400) %></div>
-
+	
+		<h2><%=h truncate(post.title, :length => 30) %></h2>
+	
+	   <div class="post_body"><%= auto_link(h(truncate(post.body, :length => 800)), :link => :urls) %></div>
 	   <p class="post_time">Posted at: <%=h post.created_at %></p>
-	   
 	   <p>
 	   	 <%= link_to 'Read More', post %> 
 
@@ -20,6 +14,7 @@
 	   	   <%= link_to 'Delete', post, :confirm => 'Are you sure?', :method => :delete %>
 	     <% end %>
    	 </p>
+	
 	</div>
 	
 <% end %>

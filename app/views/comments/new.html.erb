@@ -1,3 +1,13 @@
+<div class="post">
+  <h2>
+    <%=h @post.title %>
+  </h2>
+  <div class="post_body">
+    <%= auto_link(h(truncate(@post.body, :length => 400)), :link => :urls) %>
+  </div>
+  <p class="post_time">Posted at: <%=h @post.created_at %></p>
+</div>
+
 <h1 class="blog_title">New comment</h1>
 
 <% form_for(@comment) do |f| %>
