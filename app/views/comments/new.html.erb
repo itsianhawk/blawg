@@ -5,7 +5,7 @@
   <div class="post_body">
     <%= auto_link(h(truncate(@post.body, :length => 400)), :link => :urls) %>
   </div>
-  <p class="post_time">Posted at: <%=h @post.created_at %></p>
+  <div class="post_time">Posted at: <%=h @post.created_at %></div>
 </div>
 
 <h1 class="blog_title">New comment</h1>
@@ -16,7 +16,7 @@
 <%= f.hidden_field :post_id, :value => params[:post_id] %>
 
   <p>
-    <%= f.label :body %><br />
+    <%= f.label :body, "Enter comment below" %><br />
     <%= f.text_area :body %>
   </p>
   <p>

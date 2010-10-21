@@ -5,15 +5,15 @@
 		<h2><%=h truncate(post.title, :length => 30) %></h2>
 	
 	   <div class="post_body"><%= auto_link(h(truncate(post.body, :length => 800)), :link => :urls) %></div>
-	   <p class="post_time">Posted at: <%=h post.created_at %></p>
-	   <p>
+	   <div class="post_time">Posted at: <%=h post.created_at %><br><br>
+
 	   	 <%= link_to 'Read More', post %> 
 
 	   	 <% if !current_user.nil? %>
 	   	  | <%= link_to 'Edit', edit_post_path(post) %> |
 	   	   <%= link_to 'Delete', post, :confirm => 'Are you sure?', :method => :delete %>
 	     <% end %>
-   	 </p>
+   	 </div>
 	
 	</div>
 	

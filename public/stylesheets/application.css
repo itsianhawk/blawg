@@ -2,6 +2,7 @@ body, p, ol, ul, td {
   font-family: Helvetica, Arial, Sans-serif;
   font-size:   18px;
   line-height: 1.2em;
+  background-color: #ccc;
 }
 h1, h2, h3, h4 {
   font-size: 2.5em;
@@ -101,7 +102,7 @@ div.post {
 }
 
 div.new_comment {
-	border: 1px solid #aaa;
+  border: 1px solid #aaa;
 	margin: 10px 0;
 	padding: 5px;
 }
@@ -113,17 +114,20 @@ div.new_comment {
 }
 
 div.post h2 {
+  background-color: #eee;
   margin: 10px 0;
   padding: 0px 0px 5px 0px;
 }
 
 .post_body {
+  background-color: #eee;
   margin: 1.3em 0 1.3em;
   font-family:  Georgia, Times New Roman, Serif;
   font-size: 1.2em;
 }
 
 .post_post .post_time {
+  background-color: #eee;
   font-weight: bold;
 }
 
