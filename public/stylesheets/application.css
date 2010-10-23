@@ -1,13 +1,13 @@
 body, p, ol, ul, td {
-  font-family: Helvetica, Arial, Sans-serif;
-  font-size:   18px;
-  line-height: 1.2em;
-  background-color: #ccc;
+  	font-family: Helvetica, Arial, Sans-serif;
+  	font-size:   18px;
+  	line-height: 1.2em;
+  	background-color: #ccc;
 }
 h1, h2, h3, h4 {
-  font-size: 2.5em;
-  font-family: Helvetica, Arial, Sans-Serif;
-  line-height: .95em;
+  	font-size: 2.5em;
+  	font-family: Helvetica, Arial, Sans-Serif;
+  	line-height: .95em;
 }
 
 .small {
@@ -15,9 +15,9 @@ h1, h2, h3, h4 {
 }
 
 pre {
-  background-color: #68756A;
-  padding: 10px;
-  font-size: 11px;
+  	background-color: #68756A;
+  	padding: 10px;
+  	font-size: 11px;
 }
 
 a { color: #222; }
@@ -25,64 +25,64 @@ a:visited { color: #444; }
 a:hover { color: red; }
 
 div#logo {
-  margin: 40px 0 20px 0;
+  	margin: 40px 0 20px 0;
 }
 #logo a {
-  font-size: 4em;
-  font-weight: bold;
-  letter-spacing: -2px;
-  text-decoration: none;
-  color: #000;
+  	font-size: 4em;
+  	font-weight: bold;
+  	letter-spacing: -2px;
+  	text-decoration: none;
+  	color: #000;
 }
 
 #container {
-  width: 800px;
-  margin: 0 auto;
-  position: relative;
+  	width: 800px;
+  	margin: 0 auto;
+  	position: relative;
 }
 
 .fieldWithErrors {
-  padding: 2px;
-  background-color: red;
-  display: table;
+  	padding: 2px;
+  	background-color: red;
+  	display: table;
 }
 
 #errorExplanation {
-  width: 400px;
-  border: 2px solid #c00;
-  padding: 7px;
-  padding-bottom: 12px;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
+  	width: 400px;
+  	border: 2px solid #c00;
+  	padding: 7px;
+  	padding-bottom: 12px;
+  	margin-bottom: 20px;
+  	background-color: #f0f0f0;
 }
 
 #errorExplanation h2 {
-  text-align: left;
-  font-weight: bold;
-  padding: 5px 5px 5px 15px;
-  font-size: 12px;
-  margin: -7px;
-  background-color: #c00;
-  color: #fff;
+  	text-align: left;
+  	font-weight: bold;
+  	padding: 5px 5px 5px 15px;
+  	font-size: 12px;
+  	margin: -7px;
+  	background-color: #c00;
+  	color: #fff;
 }
 
 #errorExplanation p {
-  color: #333;
-  margin-bottom: 0;
-  padding: 5px;
+  	color: #333;
+  	margin-bottom: 0;
+  	padding: 5px;
 }
 
 #errorExplanation ul li {
-  font-size: 12px;
-  list-style: square;
+  	font-size: 12px;
+  	list-style: square;
 }
 
 #errorExplanation ul {
-  color: black;
+  	color: black;
 }
 
 h2.comments_title {
-  margin-top: 1em;
+  	margin-top: 1em;
 }
 div.comment_post {
 	border: 1px solid #aaa;
@@ -91,7 +91,7 @@ div.comment_post {
 	padding: 5px;
 }
 .comment_post .post_time {
-  font-weight: bold;
+  	font-weight: bold;
 }
 
 div.post {
@@ -102,41 +102,51 @@ div.post {
 }
 
 div.new_comment {
-  border: 1px solid #aaa;
+    border: 1px solid #aaa;
 	margin: 10px 0;
 	padding: 5px;
 }
 
 .post_comments {
-  font-weight: bold;
-  margin: 20px 0;
-  padding: 5px;
+  	font-weight: bold;
+  	margin: 20px 0;
+  	padding: 5px;
 }
 
 div.post h2 {
-  background-color: #eee;
-  margin: 10px 0;
-  padding: 0px 0px 5px 0px;
+  	background-color: #eee;
+  	margin: 10px 0;
+  	padding: 0px 0px 5px 0px;
 }
 
 .post_body {
-  background-color: #eee;
-  margin: 1.3em 0 1.3em;
-  font-family:  Georgia, Times New Roman, Serif;
-  font-size: 1.2em;
+  	background-color: #eee;
+ 	margin: 1.3em 0 1.3em;
+  	font-family:  Georgia, Times New Roman, Serif;
+ 	font-size: 1.2em;
 }
 
 .post_post .post_time {
-  background-color: #eee;
-  font-weight: bold;
+  	background-color: #eee;
+  	font-weight: bold;
 }
 
 #login {
-  position: absolute; 
-  right: 5px; 
-  top: 10px;
+  	position: absolute; 
+  	right: 5px; 
+  	top: 10px;
 }
 
 div.links {
-  padding: 0 .5em;
+  	padding: 0 .5em;
+}
+
+div.user {
+  	border: 1px solid #aaa;
+  	background-color: #eee;
+  	padding: 5px 0px 0px 5px;
+}
+
+.users {
+	padding: 0px 0px 0px 0px;
 }
