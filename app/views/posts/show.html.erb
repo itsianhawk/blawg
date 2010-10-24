@@ -31,7 +31,10 @@
 	  <% end %>
 	  on <%= comment.created_at(:date_time) %></em>
   </p>
-  
+  <% if !current_user.nil? %>
+  <%= link_to 'Edit', comment %> |
+  <%= link_to 'Delete', comment, :confirm => 'Are you sure?', :method => :delete %>
+  <% end %>
   <hr>
 <% end %>
 

@@ -1,18 +1,13 @@
-<p>
-  <b>User:</b>
-  <%=h @comment.current_user %>
-</p>
+<h2>Comment:</h2>
+  
+<div class="post_body">
+	<br>
+	<%=h @comment.body %>
+	<br><br>
+</div>
 
-<p>
-  <b>Body:</b>
-  <%=h @comment.body %>
-</p>
-
-<p>
-  <b>Post:</b>
-  <%=h @comment.post %>
-</p>
-
-
-<%= link_to 'Edit', edit_comment_path(@comment) %> |
-<%= link_to 'Back', comments_path %>
+<br>
+<% if !current_user.nil? %>
+<%= link_to 'Click to Edit', edit_comment_path(@comment) %> |
+<%= link_to 'Home', posts_path %>
+<% end %>
