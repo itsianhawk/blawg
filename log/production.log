@@ -1,0 +1,34 @@
+
+
+Processing PostsController#index (for 69.134.74.206 at 2010-10-24 15:40:37) [GET]
+  Parameters: {"controller"=>"posts", "action"=>"index"}
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 38ms (View: 32, DB: 2) | 200 OK [http://blawg.thirdlogic.net/]
+
+
+Processing UserSessionsController#new (for 69.134.74.206 at 2010-10-24 15:40:44) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://blawg.thirdlogic.net/login]
+
+
+Processing UserSessionsController#create (for 69.134.74.206 at 2010-10-24 15:40:59) [POST]
+  Parameters: {"authenticity_token"=>"Jj8IHc7cYPev1HblFEDilHOF12lc3kIOB3QP9viHpWQ=", "user_session"=>{"email"=>"admin@dev.null", "password"=>"[FILTERED]"}, "commit"=>"Login", "controller"=>"user_sessions", "action"=>"create"}
+Redirected to http://blawg.thirdlogic.net/
+Completed in 7ms (DB: 1) | 302 Found [http://blawg.thirdlogic.net/user_sessions]
+
+
+Processing PostsController#index (for 69.134.74.206 at 2010-10-24 15:40:59) [GET]
+  Parameters: {"controller"=>"posts", "action"=>"index"}
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 9ms (View: 7, DB: 1) | 200 OK [http://blawg.thirdlogic.net/]
+
+
+Processing PostsController#new (for 69.134.74.206 at 2010-10-24 15:41:13) [GET]
+  Parameters: {"controller"=>"posts", "action"=>"new"}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://blawg.thirdlogic.net/posts/new]
