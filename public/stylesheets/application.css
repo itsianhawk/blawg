@@ -120,10 +120,10 @@ div.post h2 {
 }
 
 .post_body {
-  	background-color: #eee;
- 	margin: 1.3em 0 1.3em;
+    background-color: #eee;
+    margin: 1.3em 0 1.3em;
   	font-family:  Georgia, Times New Roman, Serif;
- 	font-size: 1.2em;
+    font-size: 1.2em;
 }
 
 .post_post .post_time {
@@ -139,6 +139,21 @@ div.post h2 {
 
 div.links {
   	padding: 0 .5em;
+}
+
+div.side {
+    float: left;
+    width: 190px;
+    margin-left: 20px;
+}
+div.side h3 {
+  font-size: 1.5em;
+  margin: 15px 0;
+}
+
+div.main {
+    float: left;
+    width: 580px;
 }
 
 div.user {

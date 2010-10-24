@@ -1,0 +1,8 @@
+<div class="side">
+  <h3>Recent Posts</h3>
+  <% Post.find(:all).each do |post| %>
+    <div style="margin-bottom: 1em">
+      <%= link_to truncate(post.title, :length => 40), post %>
+    </div>
+  <% end %>
+</div>

@@ -27,13 +27,14 @@
       <%= link_to "blawg", root_url %>
     </div>
 
+    <div class="main">
+      <% if flash %>
+        <div style=""><%= flash[:notice] %></div>
+      <% end %>
 
-    <% if flash %>
-    <div style=""><%= flash[:notice] %></div>
-    <% end %>
-
-    <%= yield %>
-
+      <%= yield %>
+    </div>
+    <%= render "/layouts/sidebar" %>
   </div>
 
 </body>
